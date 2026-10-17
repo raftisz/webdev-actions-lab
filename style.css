@@ -1,0 +1,97 @@
+:root {
+  --bg: #f5f7fa;
+  --text: #1f2933;
+  --card: #ffffff;
+  --accent: #2563eb;
+  --muted: #52606d;
+}
+
+body.dark {
+  --bg: #111827;
+  --text: #e5e7eb;
+  --card: #1f2937;
+  --accent: #60a5fa;
+  --muted: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 48px 16px 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  color: var(--accent);
+}
+
+.welcome {
+  color: var(--muted);
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+#message {
+  min-height: 1.6em;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+section {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+}
